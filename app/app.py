@@ -1,10 +1,9 @@
 from flask import Flask, render_template, request
-import configuration
+import app.configuration as configuration
 import app.aicontent as aicontent
 
 def page_not_found(e):
     return render_template('404.html'), 404
-
 
 app = Flask(__name__)
 app.config.from_object(configuration.configure['development'])

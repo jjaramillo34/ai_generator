@@ -1,6 +1,6 @@
 import os
 import openai
-import configuration
+import app.configuration as configuration
 openai.api_key = configuration.OPENAI_API_KEY
 
 def open_ai_query(query):
