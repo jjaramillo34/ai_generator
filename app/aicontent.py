@@ -1,8 +1,10 @@
-import os
 import openai
 import app.configuration as configuration
 openai.api_key = configuration.OPENAI_API_KEY
 
+    """_summary_
+    
+    """
 def open_ai_query(query):
     response = openai.Completion.create(
         model="text-davinci-003",
